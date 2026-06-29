@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EpubLib/EpubLib.csproj" />
+  <Project Path="SampleApp/SampleApp.csproj" />
+</Solution>

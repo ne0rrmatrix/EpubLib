@@ -1,0 +1,14 @@
+<Solution>
+	 <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="global.json" />
+  </Folder>
+    <Folder Name="/Samples/">
+     <Project Path="Samples/SampleApp.csproj" />
+  </Folder>
+  <Folder Name="/EpubLib/">
+  <Project Path="EpubLib/EpubLib.csproj" />
+</Folder>  
+</Solution>
