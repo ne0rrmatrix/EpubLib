@@ -16,7 +16,7 @@ public partial class EpubLibHandler : ViewHandler<EpubLib, MauiEpubLib>
 		EpubManager ??= new(MauiContext ?? throw new InvalidOperationException($"{nameof(MauiContext)} cannot be null."),
 			VirtualView,
 			Dispatcher.GetForCurrentThread() ?? throw new InvalidOperationException($"{nameof(Dispatcher)} cannot be null."));
-		var view = EpubManager.CreatePlatformView();
-		return new MauiEpubLib(view);
+		var epubPlatform = EpubManager.CreatePlatformView() ?? throw new InvalidOperationException("Failed to create platform view.");
+		return new MauiEpubLib(epubPlatform);
 	}
 }
